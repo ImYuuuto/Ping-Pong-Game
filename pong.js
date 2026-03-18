@@ -103,7 +103,7 @@ function movePaddle(e) {
     rightPaddle.y += speed;
   }
 }
-//here
+
 function checkGameOver() {
   if (ball.x >= c.width) {
     p1Score = Number(player1.textContent) + 1;
@@ -122,7 +122,7 @@ function checkGameOver() {
     displayGameOver("Player 2 Won !!");
   }
 }
-//here
+
 function displayGameOver(winner) {
   ctx.font = "50px MV Boli";
   ctx.fillStyle = "White";
@@ -138,7 +138,7 @@ function scoredPlayer(py) {
   ctx.textAlign = "center";
   ctx.fillText(`${py} Has Scored`, c.width / 2, c.height / 2);
 }
-//here
+
 function gameTick() {
   if (running) {
     update();
