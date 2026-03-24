@@ -21,8 +21,8 @@ let ball = {
   x: c.width / 2,
   y: c.height / 2,
   size: 10,
-  speedX: 1,
-  speedY:1,
+  speedX: 1.5,
+  speedY:1.5,
 };
 
 //functions
@@ -115,10 +115,10 @@ function checkGameOver() {
     player2.textContent = p2Score;
     resetBall();
   }
-  if (p1Score >= 5) {
+  if (p1Score >=5) {
     displayGameOver("Player 1 Won !!");
   }
-  if (p2Score >= 5) {
+  if (p2Score >=5) {
     displayGameOver("Player 2 Won !!");
   }
 }
